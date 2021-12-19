@@ -9,6 +9,8 @@ if not game:IsLoaded() then
     until game:IsLoaded()
     end
 
+local TS = game:GetService("TeleportService")
+local Players = game:GetService("Players")
 local maxplayers = math.huge
 local serversmaxplayer;
 local goodserver;
@@ -16,11 +18,15 @@ local gamelink = "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/serve
 
 function serversearch()
     for _, v in pairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync(gamelink)).data) do
-        if type(v) == "table" and maxplayers > tonumber(1) then
+	if v.playing == nil then
+	TS:Teleport(game.PlaceId, Players.LocalPlayer)
+	else
+	if type(v) == "table" and maxplayers > v.playing then
             serversmaxplayer = v.maxPlayers
             maxplayers = v.playing
             goodserver = v.id
         end
+	end
     end
     print("Currently checking the servers with max this number of players : " .. maxplayers .. " | Amnesia Empty Server Finder")
 end
