@@ -16,7 +16,7 @@ local gamelink = "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/serve
 
 function serversearch()
     for _, v in pairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync(gamelink)).data) do
-        if type(v) == "table" and maxplayers > tonumber(v.playing) then
+        if type(v) == "table" and maxplayers > tonumber(1) then
             serversmaxplayer = v.maxPlayers
             maxplayers = v.playing
             goodserver = v.id
