@@ -1,4 +1,4 @@
-repeat wait() until game.Players.LocalPlayer.Character
+
 
 local Players = game:GetService("Players")
 local AmountOfPlayers = #Players:GetPlayers()
