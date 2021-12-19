@@ -5,9 +5,9 @@ local TS = game:GetService("TeleportService")
 if game.PlaceId == 3260590327 then
 if AmountOfPlayers >= 6 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Oniisancon/tds/main/emptyserverfinder", true))()
-end
 else
 loadstring(game:HttpGet('https://raw.githubusercontent.com/timkaMLG1/autofarmtds/main/main.lua',true))()
+end
 end
 
 if game.PlaceId == 5591597781 then
