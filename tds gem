@@ -63,9 +63,9 @@ getservers()
         print("AutoTeleport is enabled. Teleporting to : " .. goodserver)
         game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, goodserver)
     end
+end
 else
 loadstring(game:HttpGet("https://pastebin.com/raw/13MHwxhH", true))()
-end
 end
 end
 
