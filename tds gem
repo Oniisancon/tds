@@ -4,7 +4,7 @@ local AmountOfPlayers = #Players:GetPlayers()
 local TS = game:GetService("TeleportService")
 
 if game.PlaceId == 3260590327 then
-while AmountOfPlayers >= 3 then
+while AmountOfPlayers >= 3 do
 wait(1)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rapnz/scripts/master/AmnesiaEmptyServerFinder.lua"))()
 end
