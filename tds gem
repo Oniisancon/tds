@@ -3,6 +3,7 @@ local AmountOfPlayers = #Players:GetPlayers()
 local TS = game:GetService("TeleportService")
 
 if game.PlaceId == 3260590327 then
+if AmountOfPlayers >= 3 then
 getgenv().AutoTeleport = true
 getgenv().DontTeleportTheSameNumber = true --If you set this true it won't teleport to the server if it has the same number of players as your current server
 getgenv().CopytoClipboard = true
@@ -21,7 +22,7 @@ local gamelink = "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/serve
 
 function serversearch()
     for _, v in pairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync(gamelink)).data) do
-        if type(v) == "table" and maxplayers > type(v.playing) then
+        if type(v) == "table" and maxplayers > 1 then
             serversmaxplayer = v.maxPlayers
             maxplayers = v.playing
             goodserver = v.id
@@ -63,6 +64,7 @@ getservers()
         print("AutoTeleport is enabled. Teleporting to : " .. goodserver)
         game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, goodserver)
     end
+end
 loadstring(game:HttpGet("https://pastebin.com/raw/13MHwxhH", true))()
 end
 
