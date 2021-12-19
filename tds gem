@@ -3,6 +3,7 @@ local AmountOfPlayers = #Players:GetPlayers()
 local TS = game:GetService("TeleportService")
 
 if game.PlaceId == 3260590327 then
+if AmountOfPlayers >=6 then
 getgenv().AutoTeleport = true
 getgenv().DontTeleportTheSameNumber = true --If you set this true it won't teleport to the server if it has the same number of players as your current server
 getgenv().CopytoClipboard = false
@@ -62,8 +63,10 @@ getservers()
         print("AutoTeleport is enabled. Teleporting to : " .. goodserver)
         game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, goodserver)
     end
-end
+else
 loadstring(game:HttpGet("https://pastebin.com/raw/13MHwxhH", true))()
+end
+end
 end
 
 if game.PlaceId == 5591597781 then
