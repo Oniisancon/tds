@@ -4,7 +4,7 @@ local TS = game:GetService("TeleportService")
 loadstring(game:HttpGet("https://pastebin.com/raw/sDXcYFhR", true))()
 
 if game.PlaceId == 3260590327 then
-if AmountOfPlayers >= 2 then
+if AmountOfPlayers >= 3 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rapnz/scripts/master/AmnesiaEmptyServerFinder.lua"))()
 end
 loadstring(game:HttpGet("https://pastebin.com/raw/13MHwxhH", true))()
