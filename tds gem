@@ -21,9 +21,11 @@ local gamelink = "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/serve
 
 function serversearch()
     for _, v in pairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync(gamelink)).data) do
-	serversmaxplayer = v.maxPlayers
-	maxplayers = v.playing
-	goodserver = v.id
+        if type(v) == "table" and maxplayers > type(v.playing) then
+            serversmaxplayer = v.maxPlayers
+            maxplayers = v.playing
+            goodserver = v.id
+        end
     end
     print("Currently checking the servers with max this number of players : " .. maxplayers .. " | Amnesia Empty Server Finder")
 end
