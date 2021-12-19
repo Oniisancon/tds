@@ -6,7 +6,7 @@ if game.PlaceId == 3260590327 then
 if AmountOfPlayers >= 6 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Oniisancon/tds/main/emptyserverfinder", true))()
 else
-loadstring(game:HttpGet('https://raw.githubusercontent.com/timkaMLG1/autofarmtds/main/main.lua',true))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/timkaMLG1/gemsautofarm/main/main.lua',true))()
 end
 end
 
