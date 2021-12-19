@@ -1,8 +1,5 @@
-if not game:IsLoaded() then
-    repeat
-        wait()
-    until game:IsLoaded()
-    end
+repeat wait() until game.Players.LocalPlayer.Character
+
 local Players = game:GetService("Players")
 local AmountOfPlayers = #Players:GetPlayers()
 local TS = game:GetService("TeleportService")
