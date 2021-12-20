@@ -15,4 +15,9 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Oniisancon/tds/main/t
 end
 end
 
+if game.PlaceId == 5591597781 then
+if AmountOfPlayers >= 2 then
+TS:Teleport(3260590327, Players.LocalPlayer)
+end
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Oniisancon/tds/main/tds%20coin',true))()
+end
