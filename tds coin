@@ -11,7 +11,7 @@ if game.PlaceId == 3260590327 then
 if AmountOfPlayers >= 6 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Oniisancon/tds/main/emptyserverfinder", true))()
 else
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Oniisancon/tds/main/tds%20coin',true))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Oniisancon/tds/main/tds%20coin2',true))()
 end
 end
 
