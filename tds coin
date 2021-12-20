@@ -1,9 +1,11 @@
+local Players = game:GetService("Players")
+local AmountOfPlayers = #Players:GetPlayers()
+local TS = game:GetService("TeleportService")
 
-
-
-
-
-
+if game.PlaceId == 3260590327 then
+if AmountOfPlayers >= 6 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Oniisancon/tds/main/emptyserverfinder", true))()
+else
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()TDS:Loadout("Accelerator", "Turret", "Military Base", "DJ Booth", "Farm")
 TDS:Map("Grass Isle", true, "Survival")
 TDS:Mode("Normal")
@@ -167,3 +169,4 @@ TDS:Upgrade(11, 40, 99, 55)
 TDS:Upgrade(13, 40, 99, 50)
 TDS:Upgrade(5, 40, 99, 40)
 TDS:Upgrade(5, 40, 99, 30)
+end
