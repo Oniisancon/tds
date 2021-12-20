@@ -1,5 +1,5 @@
 getgenv().AutoTeleport = true
-getgenv().DontTeleportTheSameNumber = true --If you set this true it won't teleport to the server if it has the same number of players as your current server
+getgenv().DontTeleportTheSameNumber = false --If you set this true it won't teleport to the server if it has the same number of players as your current server
 getgenv().CopytoClipboard = false
 
 if not game:IsLoaded() then
